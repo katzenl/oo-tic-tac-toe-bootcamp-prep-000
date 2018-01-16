@@ -38,3 +38,4 @@ class TicTacToe
     index > 8 || index < 0 ? return false
     !position_taken?(index)
   end
+end
