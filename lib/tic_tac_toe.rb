@@ -69,4 +69,21 @@ class TicTacToe
     end
     false
   end
+
+  def full?
+    turn_count == 9
+  end
+
+  def draw?
+    !won && full?
+  end
+
+  def over?
+    won? || full?
+  end
+
+  def winner
+    win_combo = won?
+    win_combo ? @board[win_combo[0]] : nil
+  end
 end
