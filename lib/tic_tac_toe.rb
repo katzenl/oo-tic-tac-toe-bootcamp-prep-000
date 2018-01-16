@@ -64,7 +64,7 @@ class TicTacToe
       i1, i2, i3 = com[0], com[1], com[2]
       @board[i1] == " " ? next : piece = @board[i1]
       if @board[i1] == @board[i2] && @board[i1] == @board[i3]
-        return true
+        return com
       end
     end
     false
